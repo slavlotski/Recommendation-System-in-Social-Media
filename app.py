@@ -14,7 +14,6 @@ app = FastAPI()
 # Читаем данные из БД из таблицы post_text_df для сбора признаков
 post_query = session.query(Post.post_id, Post.text, Post.topic).all()
 post_df = pd.DataFrame(post_query)
-app = FastAPI()
 # Читаем данные из БД из таблицы user_data для сбора признаков
 user_query = session.query(User.user_id, User.gender, User.city,
                           User.exp_group, User.os,User.country,
