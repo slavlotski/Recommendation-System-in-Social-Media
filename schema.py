@@ -19,7 +19,7 @@ class UserGet(BaseModel):
 
 class PostGet(BaseModel):
 
-    post_id: int
+    id: int
     text: str
     topic: str
 
